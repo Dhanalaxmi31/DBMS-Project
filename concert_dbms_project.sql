@@ -1,3 +1,5 @@
+-- Concert management database
+  
 create database project;
 use project;
 
