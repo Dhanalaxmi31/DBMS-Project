@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+<session-factory>
+
+<property name="hibernate.connection.Driver_class">com.mysql.cj.jdbc.Driver</property>
+<property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/concertmgmt</property>
+<property name="hibernate.connection.user">root</property>
+<property name="hibernate.connection.password">maggie@3000#</property>
+<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+<property name="hibernate.show_sql">true</property>
+<property name="hibernate.hbm2ddl.auto">update</property>
+ 
+ <!--<mapping resource="mapping.xml"/>-->
+ 
+ <mapping class="concertmanagementEntities.Concert"/>
+<mapping class="concertmanagementEntities.Venue"/>
+   <mapping  class="concertmanagementEntities.Organizer"/>
+   <mapping  class="concertmanagementEntities.Artist"/>
+   <mapping  class="concertmanagementEntities.Attendee"/>
+   <mapping  class="concertmanagementEntities.Ticket"/>
+  
+</session-factory>
+</hibernate-configuration>
